@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SimpleShun's HomePage</title>
+	<link rel="stylesheet" href="style.css" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+	</style>
+</head>
+
+<body class="blackbg">
+	<div class="mainDiv underdog-regular" style="color: white;">
+		<header style="align-content: center;align-items: center;text-align: center;">
+			<h2 style="color: white;">SimpleShun</h2>
+		</header>
+		<div class="box">
+			<div class="boxitem" style="text-align: center;">
+				<h1 class="time"></h1>
+				<!--<div>-->
+				<!--	<a href="https://www.youtube.com">-->
+				<!--		<img src="img/youtube.png" height="30px" /> <span-->
+				<!--			style="font-size: 35px;">Youtube</span></a>-->
+				<!--</div>-->
+
+			</div>
+			<div class="imageDiv boxitem">
+				<!--<img src="/home/simpleshun/Pictures/Wallpaper/wallhaven-m38yjy.jpg"-->
+				<!--	style="height: 80vh;" />-->
+
+				<img src="/home/simpleshun/Pictures/Wallpaper/wallhaven-gp35yq.jpg"
+					style="height: 80vh;" />
+			</div>
+			<div class="boxitem" style="text-align: center;">
+				<h1 class="day"></h1>
+			</div>
+		</div>
+		<div style="text-align: center;">
+			Website
+		</div>
+	</div>
+</body>
+
+<script>
+	let timefunc = function () {
+		document.querySelector(".time").innerHTML = new Date().toLocaleTimeString()
+	}
+	timefunc()
+	document.querySelector(".day").innerHTML = new Date().toDateString()
+	setInterval(timefunc, 1000)
+</script>
+
+</html>
